@@ -206,6 +206,7 @@ class PERichHeaderParser(object):
     
         # Usually MASM-compiled GUI exes have 3 IDs: link.exe, ml.exe and cvtres.exe;
         # DLLs and consoles have 2 IDs: link.exe and ml.exe.
+        version = "None"
         if nNumberOfRichIDs > 1 and nNumberOfRichIDs <= 3 and not self.is_Rich_version_present(0):
             detected = True
             version = get_MASM_version()

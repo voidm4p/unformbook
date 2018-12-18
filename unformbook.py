@@ -169,7 +169,8 @@ def main(argv):
     
     fb = FormBook(args.file)
     
-    fb.decrypt_c2c_uri()
+    if not fb.exit:
+        fb.decrypt_c2c_uri()
     
     sys.exit()
     
