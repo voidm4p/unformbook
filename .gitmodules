@@ -1,0 +1,6 @@
+[submodule "external/tildedennis"]
+	path = external/tildedennis
+	url = https://github.com/tildedennis/malware.git
+[submodule "external/ThisIsSecurity"]
+	path = external/ThisIsSecurity
+	url = https://github.com/ThisIsSecurity/sinkhole.git
