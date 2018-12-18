@@ -12,6 +12,7 @@ class FormBook():
         from perichheaderparser import PERichHeaderParser, find_pe
         
         self.filename = filename
+        self.exit = False
         
         if find_pe(open(filename, 'rb').read()) is not None:
             p = PERichHeaderParser(filename)
